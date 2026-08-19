@@ -22,6 +22,10 @@ Clean and intuitive dashboard
 
 Since this is a static website, no backend or server-side environment is required. Just clone or download the project. Then, open the index.html file.
 
+# Image of the Dashboard
+<img width="1366" height="675" alt="img_dash_stock" src="https://github.com/user-attachments/assets/9df9fef3-7e1b-4121-9bc4-a6d1fa42aaf4" />
+
+
 # 🎯 Project Goal
 
 The main goal of this project is to provide Hélio Trading with a simple and efficient interface for managing its inventory and keeping track of available computer and IT products.
