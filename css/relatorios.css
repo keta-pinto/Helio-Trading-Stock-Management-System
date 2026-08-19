@@ -1,0 +1,70 @@
+/*--------------Área Principal da Página Relatórios--------------*/
+
+main#area-main {
+    margin-top: 30px;
+}
+
+a#btn-relatorios {
+    margin-left: 83.5%;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    /*background-color: #47519b;*/
+    background-color: #1d30c5;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+a#btn-relatorios:hover {
+    background-color: #2339de;
+}
+
+.relatorios{
+    margin-top: 30px;
+    margin-left: 29px;
+    margin-right: 29px;
+}
+
+.relatorios .send-box{
+    background-color: white;
+    color: #4456dd;
+    box-shadow: 1px 1px 5px #4456dd99;
+    padding: 30px 15px;
+    margin: 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 56vh;
+}
+
+#send-text {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background: #4456dd57;
+    border-radius: 6px;
+    padding: 10px 15px;
+    outline: none;
+}
+
+a#btn-enviar {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #1d30c5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+a#btn-enviar:hover {
+    background: #2339de;
+}

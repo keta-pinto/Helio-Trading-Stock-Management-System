@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Stock</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/controle.css">
+    <style>
+        #controle {
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            color: #4456dd;
+        }
+
+        .nav ul li #blue-control {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="interface">
+        <section id="lateral">
+            <div class="logo">
+                <h2>Hélio Trading LDA</h2>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <img src="recursos/white-dashboard.png" alt="Person" class="img-dashboard" id="white-dashboard">
+                        <img src="recursos/blue-dashboard.png" alt="Person" class="img-dashboard" id="blue-dashboard">
+                        <a href="index.html" class="link">Dashboard</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-product.png" alt="Produtos" class="img-produto" id="white-product">
+                        <img src="recursos/blue-product.png" alt="Produtos" class="img-produto" id="blue-product">
+                        <a href="produtos.html" class="link">Produtos</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-control.png" alt="Controle" class="img-controle" id="white-control">
+                        <img src="recursos/blue-control.png" alt="Controle" class="img-controle" id="blue-control">
+                        <a href="controle.html" class="link" id="controle">Controle</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-money.png" alt="Receitas" class="img-receita" id="white-money">
+                        <img src="recursos/blue-money.png" alt="Receitas" class="img-receita" id="blue-money">
+                        <a href="receitas.html" class="link">Receitas</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-report.png" alt="Relatórios" class="img-relatorio" id="white-report">
+                        <img src="recursos/blue-report.png" alt="Relatórios" class="img-relatorio" id="blue-report">
+                        <a href="relatorios.html" class="link">Relatórios</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <img src="recursos/white-user.png" alt="Person" id="white-user" class="img-profile">
+                        <img src="recursos/blue-user.png" alt="Person" id="blue-user" class="img-profile">
+                        <a href="perfil.html" class="link profile">Perfíl</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-logout.png" alt="Person" id="white-logout" class="img-logout">
+                        <img src="recursos/blue-logout.png" alt="Person" id="blue-logout" class="img-logout">
+                        <a href="login.html" class="link">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="main">
+            <header id="cabecalho-main">
+                <h1>Gestão de Stock</h1>
+                <input type="text" placeholder="Pesquisar">
+                <figure id="area-img">
+                    <img src="recursos/bell.png" alt="Notificação" id="bell">
+                    <a href="perfil.html"><img src="recursos/person2.png" alt="Person" id="person"></a>
+                </figure>
+            </header>
+            <br>
+            <main id="area-main">
+                <div class="box">
+                    <div class="box-circle" style="margin-left: 50px;">
+                        <h2>Stock alto</h2>
+                        <p class="number">0%</p>
+                        <svg>
+                            <circle cx="200" cy="65" r="48"></circle>
+                            <circle cx="200" cy="65" r="48" id="circleProgress1"></circle>
+                        </svg>
+                    </div>
+                    <div class="box-circle">
+                        <h2>Stock baixo</h2>
+                        <p class="number">0%</p>
+                        <svg>
+                            <circle cx="200" cy="65" r="48"></circle>
+                            <circle cx="200" cy="65" r="48" id="circleProgress2"></circle>
+                        </svg>
+                    </div>
+                    <div class="box-circle" style="margin-right: 50px;">
+                        <h2>Stock ok</h2>
+                        <p class="number">0%</p>
+                        <svg>
+                            <circle cx="200" cy="65" r="48"></circle>
+                            <circle cx="200" cy="65" r="48" id="circleProgress3"></circle>
+                        </svg>
+                    </div>    
+                </div>
+                <div class="controle-geral">
+                    <div class="btn-accao">
+                        <a href="#" id="btn-reg_enter"><span style="font-size:20px;">+</span> Entrada</a>
+                        <a href="#" id="btn-reg_exit"><span style="font-size:20px;">+</span> Saída</a>
+                    </div>
+                    <div class="listagem">
+                        <table id="table-list">
+                            <thead>
+                                <tr>
+                                    <th>Controle</th>
+                                    <th>Data</th>
+                                    <th>Descrição</th>
+                                    <th>Quantidade(unid)</th>
+                                    <th>Valor Aplicado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>11/07/2025</td>
+                                    <td>Entrada</td>
+                                    <td>30</td>
+                                    <td>300.000,00kz</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>22/07/2025</td>
+                                    <td>Saída</td>
+                                    <td>15</td>
+                                    <td>150.000,00kz</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>22/07/2025</td>
+                                    <td>Saída</td>
+                                    <td>15</td>
+                                    <td>150.000,00kz</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>22/07/2025</td>
+                                    <td>Saída</td>
+                                    <td>15</td>
+                                    <td>150.000,00kz</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+</body>
+</html>

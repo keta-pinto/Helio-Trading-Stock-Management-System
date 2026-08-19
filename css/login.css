@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(100deg, #4456dd,#4456dd99);
+    display: flex;
+    justify-content: center;
+}
+
+div#divLogin {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 73vh;
+    width: 25vw;
+    background-color: rgb(249, 244, 244);
+    margin-top: 7%;
+    padding-left: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px grey;
+}
+
+.container {
+    margin-top: 60px;
+}
+
+form input {
+    outline: none;
+    border: none;
+    height: 7vh;
+    width: 22vw;
+    margin-top: -5px;
+    border-radius: 15px;
+    background-color: rgba(201, 191, 191, 0.657);
+}
+
+.botao {
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 7vh;
+    width: 22vw;
+    border-radius: 15px;
+    font: normal 13pt Arial;
+    color: #ffff;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, #4456dd,#4456dd99);
+    margin-bottom: 15px;
+}
+
+.span1 {
+    position: absolute;
+    margin-top: 5px;
+    font-weight: 300;
+    font-family: 56px;
+}
+
+div#divLogin span.span2 {
+    position: absolute;
+    margin-top: 40px;
+    font-family: 6px;
+    font-weight: 300;
+}
+
+#cadastrar {
+    text-decoration: none;
+}

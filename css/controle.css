@@ -1,0 +1,110 @@
+/*-------Área principal da página controle-------*/
+
+/*Círculo de progressão*/
+.box {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.box-circle {
+    position: relative;
+    width: 40%;
+    margin-right: 20px;
+    color: grey;
+    background-color: #4456dd29;
+    box-shadow: 0px 0px 5px grey;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.box-circle svg {
+    height: 130px;
+    margin-top: -30px;
+}
+
+.box-circle h2{
+    position: relative;
+    top: 30px;
+    padding-left: 10px;
+}
+
+.box-circle p.number{
+    position: relative;
+    top: 45px;
+    left: 190px;
+    color: white;
+}
+
+.box-circle circle {
+    stroke-width: 7px;
+    fill:#4456dd29;
+    stroke-dasharray: 302;
+    stroke-dashoffset: 302;
+    transition: stroke 0.3s;
+}
+
+.box-circle circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box-circle circle:nth-child(2) {
+    stroke-dashoffset: calc(302 - 0);
+    stroke: #4456dd;
+}
+/*---------------------------------*/
+
+.controle-geral {
+    margin: 5px;
+}
+
+div.btn-accao {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+a#btn-reg_enter {
+    margin-right: 10px;
+}
+
+a#btn-reg_enter, #btn-reg_exit{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    /*background-color: #47519b;*/
+    background-color: #4456dd;
+    padding: 10px 15px 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+a#btn-reg_enter:hover, #btn-reg_exit:hover{
+    background-color: #4456ddf0;
+}
+
+div.listagem {
+    margin-top: 10px;
+    margin-left: 70px;
+    text-align: center;
+}
+
+div.listagem table#table-list {
+    box-shadow: 0px 0px 8px rgb(56, 54, 54);
+    border-spacing: 0px;
+    margin-left: -20px;
+}
+
+#table-list thead {
+    background-color: #4456dd86;
+}
+
+#table-list tbody {
+    background-color: #4456dd29;
+}
+
+#table-list th, td {
+    padding: 15px 51px;
+}

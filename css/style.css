@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    /*Tipo de letra usado na maior parte do sistema*/
+    font-family: 'IBMPlax';
+    src: url("../fonts/IBMPlexSans.ttf"); /*Localização da fonte no projecto*/
+}
+
+body {
+    font-family: 'IBMPlax', sans-serif;
+    overflow-x: hidden;
+}
+
+/*Área Lateral*/
+section#lateral {
+    background: url("../recursos/logo-h2-trading.png") no-repeat 90px 15px;
+    position: fixed;
+    display: block;
+    float: left;
+    background-color: #4456dd;
+    color: white;
+    width: 20%;
+    height: 100%;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 120px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav ul, .info ul {
+    position: absolute;
+    display: block;
+    left: 30%;
+    top: 45%;
+    transform: translate(-30%, -45%);
+    list-style: none;
+}
+
+.nav ul li, .info ul li {
+    margin: 20px;
+}
+
+.nav ul li a, .info ul li a{
+    text-decoration: none;
+    padding: 6px 50px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.nav ul li a.link:hover, .info ul li a.link:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: #4456dd;
+}
+
+.info ul {
+    top: 80%;
+}
+
+.nav ul li #blue-dashboard {
+    display: none;
+}
+
+.nav ul li:hover #blue-dashboard {
+    display: block;
+}
+
+.img-produto {
+    position: absolute;
+    top: 57px;
+    left: 40px;
+}
+
+.nav ul li #blue-product {
+    display: none;
+}
+
+.nav ul li:hover #blue-product {
+    display: block;
+}
+
+.img-controle {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+}
+
+.nav ul li #blue-control{
+    display: none;
+}
+
+.nav ul li:hover #blue-control {
+    display: block;
+}
+
+.img-receita {
+    position: absolute;
+    top: 138px;
+    left: 40px;
+}
+
+.nav ul li #blue-money {
+    display: none;
+}
+
+.nav ul li:hover #blue-money {
+    display: block;
+}
+
+.img-relatorio {
+    position: absolute;
+    top: 178px;
+    left: 40px;
+}
+
+.nav ul li #blue-report {
+    display: none;
+}
+
+.nav ul li:hover #blue-report {
+    display: block;
+}
+
+.img-profile, .img-dashboard {
+    position: absolute;
+    top: 21px;
+    left: 45px;
+}
+
+.info ul li #blue-user{
+    display: none;
+}
+
+.info ul li:hover #blue-user{
+    display: block;
+}
+
+.img-logout {
+    position: absolute;
+    top: 62px;
+    left: 45px;
+}
+
+.info ul li #blue-logout{
+    display: none;
+}
+
+.info ul li:hover #blue-logout{
+    display: block;
+}
+
+/*Área Principal*/
+section#main {
+    display: block;
+    float: right;
+    width: 80%;
+}
+
+header#cabecalho-main {
+    display: flex;
+    padding: 30px 50px;
+    margin-bottom: 10px;
+}
+
+header#cabecalho-main h1 {
+    flex: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4456dd;
+    /*margin-left: 28px;
+    margin-right: 100px;*/
+}
+
+header#cabecalho-main input {
+    flex: 50%;
+    width: 100%;
+    margin-right: 205px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 20px;
+    padding: 5px 30px;
+}
+
+#area-img_cabec{
+    flex: 10%;
+}
+
+#bell {
+    margin-right: 5px;
+}
+
+div#res {
+    padding: 25px;
+}
+
+div#res p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.resumo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.resumo div{
+    background-color: white;
+    color: #4456dd;
+    box-shadow: 1px 1px 5px #4456dd99;
+    padding: 30px 10px;
+    margin: 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.previsao {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*.estatisca {
+    display: flex;
+    flex-flow: row wrap;
+    
+}*/
+
+.estatisca div{
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px #4456dd99;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+}
+
+#img-estatistica {
+    display: flex;
+    flex-flow: row wrap;
+}

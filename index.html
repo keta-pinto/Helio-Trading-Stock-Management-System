@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Stock</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #dashboard {
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            color: #4456dd;
+        }
+
+        .nav ul li #blue-dashboard {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="interface">
+        <section id="lateral">
+            <div class="logo">
+                <h2>Hélio Trading LDA</h2>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <img src="recursos/white-dashboard.png" alt="Person" class="img-dashboard" id="white-dashboard">
+                        <img src="recursos/blue-dashboard.png" alt="Person" class="img-dashboard" id="blue-dashboard">
+                        <a href="index.html" class="link" id="dashboard">Dashboard</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-product.png" alt="Produtos" class="img-produto" id="white-product">
+                        <img src="recursos/blue-product.png" alt="Produtos" class="img-produto" id="blue-product">
+                        <a href="produtos.html" class="link">Produtos</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-control.png" alt="Controle" class="img-controle" id="white-control">
+                        <img src="recursos/blue-control.png" alt="Controle" class="img-controle" id="blue-control">
+                        <a href="controle.html" class="link">Controle</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-money.png" alt="Receitas" class="img-receita" id="white-money">
+                        <img src="recursos/blue-money.png" alt="Receitas" class="img-receita" id="blue-money">
+                        <a href="receitas.html" class="link">Receitas</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-report.png" alt="Relatórios" class="img-relatorio" id="white-report">
+                        <img src="recursos/blue-report.png" alt="Relatórios" class="img-relatorio" id="blue-report">
+                        <a href="relatorios.html" class="link">Relatórios</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <img src="recursos/white-user.png" alt="Person" id="white-user" class="img-profile">
+                        <img src="recursos/blue-user.png" alt="Person" id="blue-user" class="img-profile">
+                        <a href="perfil.html" class="link profile">Perfíl</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-logout.png" alt="Person" id="white-logout" class="img-logout">
+                        <img src="recursos/blue-logout.png" alt="Person" id="blue-logout" class="img-logout">
+                        <a href="login.html" class="link">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="main">
+            <header id="cabecalho-main">
+                <h1>Gestão de Stock</h1>
+                <input type="text" placeholder="Pesquisar">
+                <figure id="area-img_cabec">
+                    <img src="recursos/bell.png" alt="Notificação" id="bell">
+                    <a href="perfil.html"><img src="recursos/person2.png" alt="Person" id="person"></a>
+                </figure>
+            </header>
+            <main id="area-main">
+                <div id="res">
+                    <div class="resumo">
+                        <div class="vista-geral" style="flex:10%;">
+                            <span id="total-prod" class="previsao">130</span>
+                            <p>Total de produtos</p>
+                        </div>
+                        <div class="vista-geral" style="flex:10%;">
+                            <span id="total-receita" class="previsao">2000kz</span>
+                            <p>Total de receitas no mês</p>
+                        </div>
+                        <div class="vista-geral" style="flex:10%;">
+                            <span id="reg-recentes" class="previsao">30</span>
+                            <p>Registros recentes</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="estatisca">
+                        <div class="vista-est">
+                            <p style="margin-left:5px"></p>
+                            <br>
+                            <figure id="img-estatistica">
+                                <img src="recursos/grafico2.png" width="430" height="300" alt="Gráfico">
+                                <img src="recursos/grafico2.png" width="450" height="300" alt="Gráfico">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/*------Área principal da página receitas------*/
+main#area-main {
+    margin-top: 40px;
+}
+
+.controle-geral {
+    margin: 5px;
+}
+
+div.btn-accao {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px; 
+}
+
+a#btn-add_receita{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    /*background-color: #47519b;*/
+    background-color: #4456dd;
+    padding: 10px 15px 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+div.listagem {
+    margin-top: 10px;
+    margin-left: 70px;
+    text-align: center;
+    display: block;
+    /*border: 1px solid #1b1c1e;
+    box-shadow: 0px 0px 4px #47519b;*/
+    /*width: 1050px;
+    height: 450px;*/
+}
+
+div.listagem table#table-list {
+    box-shadow: 0px 0px 8px rgb(56, 54, 54);
+    border-spacing: 0px;
+    margin-left: -20px;
+}
+
+#table-list thead {
+    background-color: #4456dd86;
+}
+
+#table-list tbody {
+    background-color: #4456dd29;
+}
+
+#table-list th, td {
+    height: auto;
+    padding: 15px 49.5px;
+}

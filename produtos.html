@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Stock</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <style>
+        #produtos {
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            color: #4456dd;
+        }
+
+        .nav ul li #blue-product {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="interface">
+        <section id="lateral">
+            <div class="logo">
+                <h2>Hélio Trading LDA</h2>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <img src="recursos/white-dashboard.png" alt="Person" class="img-dashboard" id="white-dashboard">
+                        <img src="recursos/blue-dashboard.png" alt="Person" class="img-dashboard" id="blue-dashboard">
+                        <a href="index.html" class="link">Dashboard</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-product.png" alt="Produtos" class="img-produto" id="white-product">
+                        <img src="recursos/blue-product.png" alt="Produtos" class="img-produto" id="blue-product">
+                        <a href="produtos.html" class="link" id="produtos">Produtos</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-control.png" alt="Controle" class="img-controle" id="white-control">
+                        <img src="recursos/blue-control.png" alt="Controle" class="img-controle" id="blue-control">
+                        <a href="controle.html" class="link">Controle</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-money.png" alt="Receitas" class="img-receita" id="white-money">
+                        <img src="recursos/blue-money.png" alt="Receitas" class="img-receita" id="blue-money">
+                        <a href="receitas.html" class="link">Receitas</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-report.png" alt="Relatórios" class="img-relatorio" id="white-report">
+                        <img src="recursos/blue-report.png" alt="Relatórios" class="img-relatorio" id="blue-report">
+                        <a href="relatorios.html" class="link">Relatórios</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <img src="recursos/white-user.png" alt="Person" id="white-user" class="img-profile">
+                        <img src="recursos/blue-user.png" alt="Person" id="blue-user" class="img-profile">
+                        <a href="perfil.html" class="link profile">Perfíl</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-logout.png" alt="Person" id="white-logout" class="img-logout">
+                        <img src="recursos/blue-logout.png" alt="Person" id="blue-logout" class="img-logout">
+                        <a href="login.html" class="link">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="main">
+            <header id="cabecalho-main">
+                <h1>Gestão de Stock</h1>
+                <input type="text" placeholder="Pesquisar">
+                <figure id="area-img">
+                    <img src="recursos/bell.png" alt="Notificação" id="bell">
+                    <a href="perfil.html"><img src="recursos/person2.png" alt="Person" id="person"></a>
+                </figure>
+            </header>
+            <main id="area-main">
+                <div class="header-prod">
+                    <a href="#" id="btn-add_Prod"><span style="font-size:25px;">+</span> Adicionar</a>
+                </div>
+                <div class="listagem">
+                    <table id="table-list">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nome do Produto</th>
+                                <th>Categoria</th>
+                                <th>Quantidade em stock</th>
+                                <th>Preço</th>
+                                <th>Válido até</th>
+                                <th>Estado</th>
+                                <th>Acções</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Computador Portátil</td>
+                                <td>Eletrónico</td>
+                                <td>40</td>
+                                <td>200.000,00</td>
+                                <td>11/07/2028</td>
+                                <td>Em dia</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Impressora Jato Tinta</td>
+                                <td>Eletrónico</td>
+                                <td>30</td>
+                                <td>70.000,00</td>
+                                <td>29/11/2030</td>
+                                <td>Em dia</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Conector RJ45</td>
+                                <td>Material de Rede</td>
+                                <td>50</td>
+                                <td>150,00</td>
+                                <td>01/07/2032</td>
+                                <td>Em dia</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Switch</td>
+                                <td>Material de Rede</td>
+                                <td>25</td>
+                                <td>14.000,00</td>
+                                <td>14/02/2027</td>
+                                <td>Em dia</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Roteador</td>
+                                <td>Material de Rede</td>
+                                <td>15</td>
+                                <td>35.000,00</td>
+                                <td>20/01/2027</td>
+                                <td>Em dia</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Tinta RGB</td>
+                                <td>Tinta</td>
+                                <td>5</td>
+                                <td>20.000,00</td>
+                                <td>28/10/2026</td>
+                                <td>Stock Baixo</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Tinta RGB</td>
+                                <td>Tinta</td>
+                                <td>5</td>
+                                <td>20.000,00</td>
+                                <td>28/10/2026</td>
+                                <td>Stock Baixo</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Tinta RGB</td>
+                                <td>Tinta</td>
+                                <td>5</td>
+                                <td>20.000,00</td>
+                                <td>28/10/2026</td>
+                                <td>Stock Baixo</td>
+                                <td>...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </section>
+    </div>
+</body>
+</html>

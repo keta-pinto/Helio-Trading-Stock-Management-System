@@ -1,0 +1,66 @@
+/*--------------Área Principal da Página Perfíl--------------*/
+
+main#area-main {
+    margin-top: 40px;
+    margin-left: 54px;
+    margin-right: 54px;
+    background-color: white;
+    box-shadow: 1px 1px 5px #4456dd99;
+    padding: 30px 15px;
+    margin-bottom: 20px;
+    height: 69vh;
+}
+
+div.profile-data {
+    display: flex;
+    background: #4456dd57;
+    box-shadow: 1px 1px 5px #4456dd99;
+    padding: 30px 15px;
+    margin: -5px 20px;
+}
+
+.profile-img img {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.profile-description {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    box-shadow: 1px 1px 5px #4456dd99;
+    padding: 30px 50px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.profile-description h2{
+    color: #4456dd;
+    text-align: center;
+}
+
+.profile-description p span{
+    color: grey;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+#btn-editar {
+    text-decoration: none;
+    margin-left: 16px;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #1d30c5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn-editar:hover {
+    background: #2339de;
+}

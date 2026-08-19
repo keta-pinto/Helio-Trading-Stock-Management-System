@@ -1,0 +1,55 @@
+/*------Área principal da página produtos------*/
+main#area-main {
+    margin-top: 20px;
+}
+
+div.header-prod {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 30px;
+}
+
+a#btn-add_Prod {
+    margin-left: 85.5%;
+    text-decoration: none;
+    color: white;
+    /*background-color: #47519b;*/
+    background-color: #4456dd;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+a#btn-add_Prod:hover {
+    background-color: #4456ddf0;
+}
+
+div.listagem {
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+div.listagem table#table-list {
+    box-shadow: 0px 0px 6px rgb(56, 54, 54);
+    border-spacing: 0px;
+    margin-left: 30px;
+}
+
+#table-list thead {
+    background-color: #4456dd86;
+}
+
+#table-list tbody {
+    background-color: #4456dd29;
+}
+
+#table-list th, td {
+    border-bottom: 1px solid #4456dd6f;
+    padding: 8px 11px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Stock</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <style>
+        #perfil {
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            color: #4456dd;
+        }
+        
+        .info ul li #blue-user{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="interface">
+        <section id="lateral">
+            <div class="logo">
+                <h2>Hélio Trading LDA</h2>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <img src="recursos/white-dashboard.png" alt="Person" class="img-dashboard" id="white-dashboard">
+                        <img src="recursos/blue-dashboard.png" alt="Person" class="img-dashboard" id="blue-dashboard">
+                        <a href="index.html" class="link">Dashboard</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-product.png" alt="Produtos" class="img-produto" id="white-product">
+                        <img src="recursos/blue-product.png" alt="Produtos" class="img-produto" id="blue-product">
+                        <a href="produtos.html" class="link">Produtos</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-control.png" alt="Controle" class="img-controle" id="white-control">
+                        <img src="recursos/blue-control.png" alt="Controle" class="img-controle" id="blue-control">
+                        <a href="controle.html" class="link">Controle</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-money.png" alt="Receitas" class="img-receita" id="white-money">
+                        <img src="recursos/blue-money.png" alt="Receitas" class="img-receita" id="blue-money">
+                        <a href="receitas.html" class="link">Receitas</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-report.png" alt="Relatórios" class="img-relatorio" id="white-report">
+                        <img src="recursos/blue-report.png" alt="Relatórios" class="img-relatorio" id="blue-report">
+                        <a href="relatorios.html" class="link">Relatórios</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <img src="recursos/white-user.png" alt="Person" id="white-user" class="img-profile">
+                        <img src="recursos/blue-user.png" alt="Person" id="blue-user" class="img-profile">
+                        <a href="perfil.html" class="link profile" id="perfil">Perfíl</a>
+                    </li>
+                    <li>
+                        <img src="recursos/white-logout.png" alt="Person" id="white-logout" class="img-logout">
+                        <img src="recursos/blue-logout.png" alt="Person" id="blue-logout" class="img-logout">
+                        <a href="login.html" class="link">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="main">
+            <header id="cabecalho-main">
+                <h1>Gestão de Stock</h1>
+                <figure id="area-img" style="margin-left: 60%;">
+                    <img src="recursos/bell.png" alt="Notificação" id="bell">
+                    <a href="perfil.html"><img src="recursos/person2.png" alt="Person" id="person"></a>
+                </figure>
+            </header>
+            <main id="area-main">
+                <div class="profile-data">
+                    <figure class="profile-img">
+                        <img src="recursos/profile/jovem-mulher2.png" alt="Jovem Mulher">
+                    </figure>
+                    <div class="profile-description">
+                        <h2>Dados do Perfíl</h2>
+                        <br>
+                        <p><strong>Nome:</strong> <span>Letícia Gomes</span></p>
+                        <p><strong>Email:</strong> <span>leticiagomes@gmail.com</span></p>
+                        <p><strong>Sexo:</strong> <span>Femenino<span></p>
+                        <p><strong>Nascimento:</strong> <span>14/07/2005</span></p>
+                    </div>
+                </div>
+                <br><br>
+                <a href="#" id="btn-editar">Editar Perfíl</a>
+            </main>
+        </section>
+    </div>
+</body>
+</html>
